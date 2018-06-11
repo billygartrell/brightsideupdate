@@ -1,0 +1,28 @@
+body{
+  font-family:nimbus-sans, Helvetica, sans-serif;
+}
+
+.jumbotron h1{
+  font-family:nimbus-sans;
+  font-weight:900;
+  font-size: 6rem;
+  line-height:.9;
+  text-transform: uppercase;
+
+}
+
+.jumbotron .lead{
+  font-family: prestige-elite-std, monospace;
+}
+
+#next-show-artists td{
+  padding-left:0;
+}
+
+#first-artist{
+  padding-top:0;
+}
+
+#homepage-schedule{
+  background-color:#f8f9fa!important;
+}

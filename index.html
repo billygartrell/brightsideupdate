@@ -1,77 +1,132 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-<head>
-    <!--Bootstrap Inclusion-->
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-<header>
-    <div class="container">
-            <div class="row">
-                    <div class="col-11">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Schedule</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About BB</a>
-                            </li>
-                            <li id="cta" class="nav-item">
-                                    <a class="nav-link" href="#">Book with Us</a>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
-    </div>
-</header>
-<!--Hero image-->
-<div class="container">
-    <div id="hero-area">
-        <div id="hero-overlay">
-            <h1>Brightside</h1>
-            <h1>Booking</h1>
-            <h2>Making Lancaster, PA<br>brighter since 2019.</h2>
-        </div>
-        <div id="hero-shape">
-            <div id="hero" class="img-fluid"></div>
-        </div>
-    </div>
-</div>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!--Header area-->
-<div class="container">
-    <div class="row">
-        <div class="col-7">
-            test
-        </div>
-        <div class="col-2">
-            test 2
-        </div>
-        <div class="col-3">
-            test 3
-        </div>
-    </div>
-</div>
-<!--Schedule area-->
-<div class="container">
-    <div id="schedule">
-        <h3>Schedule</h3>
-    </div>
-</div>
-</div>
-<footer>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!--Typekit fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/eny0vyt.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" type ="text/css" href="css/styles.css">
+    <title>Brightside Booking</title>
+  </head>
+  <body>
+    <!--Navigation-->
     <div class="container">
-        <!-- Footer content here -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About BB</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Book with Us</a>
+            </li>
+          </ul>
+        </div> <!--Close Navbar-->
+      </nav>
     </div>
-</footer>
-</body>
+    <!--Hero image-->
+    <div class="container">
+      <div class="jumbotron rounded-0">
+        <h1 class="display-4 text-right">Brightside<br> Booking</h1>
+        <p class="lead text-right">Making Lancaster, PA<br>brighter since 2018.</p>
+      </div>
+    </div>
+    <!--Upcoming Show-->
+    <div class="container">
+      <h2>Next Show</h2>
+      <div class="row">
+        <div class="col-md">
+          <img src="img/fliertest.jpg" class="img-fluid" alt="Upcoming Show Flier">
+        </div>
+        <div class="col-md">
+          <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <th scope="row">Date</th>
+                <td>06.10.2018</td>
+              </tr>
+              <tr>
+                <th scope="row">Artists</th>
+                <td>
+                  <table id="next-show-artists" class="table table-borderless">
+                    <tr>
+                      <td id="first-artist">Band #1</td>
+                    </tr>
+                    <tr>
+                      <td>Band #2</td>
+                    </tr>
+                    <tr>
+                      <td>Band #3</td>
+                    </tr>
+                    <tr>
+                      <td>Band #4</td>
+                    </tr>
+                  </table>
+              </td>
+              </tr>
+              <tr>
+                <th scope="row">Location</th>
+                <td>Moira Records</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#"><button type="button" class="btn btn-outline-primary btn-lg">Get Tickets</a>
+        </div>
+      </div>
+    </div>
+    <!--Schedule-->
+    <div id="homepage-schedule" class="container">
+      <h2>Schedule</h2>
+      <h3>Show 1 Date</h3>
+      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
+      <h3>Show 1 Date</h3>
+      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
+      <h3>Show 1 Date</h3>
+      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
+      <h3>Show 1 Date</h3>
+      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
+      <h3>Show 1 Date</h3>
+      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
+    </div>
+    <!--Footer-->
+    <div class="container">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About BB</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Book with Us</a>
+        </li>
+      </ul>
+      <p class="text-center">&copy; 2018 Brightside Booking. All rights reserved or whatever.</p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
 </html>

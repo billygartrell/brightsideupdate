@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/eny0vyt.css">
     <!--Custom CSS-->
     <link rel="stylesheet" type ="text/css" href="css/styles.css">
-    <title>Brightside Booking</title>
+    <title>About Brightside Booking</title>
   </head>
   <body>
     <!--Navigation-->
@@ -21,14 +21,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="schedule.html">Schedule</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About BB</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About BB <span class="sr-only">(current)</span></a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
@@ -39,73 +39,43 @@
         </div> <!--Close Navbar-->
       </nav>
     </div>
-    <!--Hero image-->
+
+    <!--Image and mission statement-->
     <div class="container">
-      <div class="jumbotron rounded-0">
-        <h1 class="display-4 text-right">Brightside<br> Booking</h1>
-        <p class="lead text-right prestige">Making Lancaster, PA<br>brighter since 2018.</p>
-      </div>
-    </div>
-    <!--Upcoming Show-->
-    <div class="container">
-      <h2>Next Show</h2>
+      <h1>About Brightside Booking</h1>
       <div class="row">
-        <div class="col-md">
-          <img src="img/fliertest.jpg" class="img-fluid" alt="Upcoming Show Flier">
+        <div class="col-7">
+          <img class="img-fluid"src="img/brightsidebois.jpg">
         </div>
-        <div class="col-md">
-          <table class="table table-borderless">
-            <tbody>
-              <tr>
-                <th scope="row">Date</th>
-                <td class="prestige">June 23, 2018</td>
-              </tr>
-              <tr>
-                <th scope="row">Artists</th>
-                <td>
-                  <table id="next-show-artists" class="table table-borderless prestige"> <!--Note to self: remove this "next-show-id." It is used on the show information pages-->
-                    <tr>
-                      <td class="first-artist">Worries</td>
-                    </tr>
-                    <tr>
-                      <td>Sun Not Yellow</td>
-                    </tr>
-                    <tr>
-                      <td>Seasonal</td>
-                    </tr>
-                    <tr>
-                      <td>Magnolia.</td>
-                    </tr>
-                  </table>
-              </td>
-              </tr>
-              <tr>
-                <th scope="row">Location</th>
-                <td class="prestige">Moira Records</td>
-              </tr>
-              <tr>
-                <th></th>
-                <td class="prestige">All ages show. 21+ BYOB.</td>
-            </tbody>
-          </table>
-          <a href="#"><button type="button" class="btn btn-outline-primary btn-lg ml-auto">Get Tickets</a>
+        <div class="col-5">
+          <p class="lead">
+            Here's where we put information about our mission statement.
+          </p>
         </div>
       </div>
     </div>
-    <!--Schedule-->
-    <div id="homepage-schedule" class="container">
-      <h2>Schedule</h2>
-      <h3>Show 1 Date</h3>
-      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
-      <h3>Show 1 Date</h3>
-      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
-      <h3>Show 1 Date</h3>
-      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
-      <h3>Show 1 Date</h3>
-      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
-      <h3>Show 1 Date</h3>
-      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
+
+    <!--Contact form-->
+    <div class="container">
+      <h2>Want to work with us?</h2>
+      <form id="booking-form">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
+
     <!--Footer-->
     <div class="container">
       <ul class="nav justify-content-center">

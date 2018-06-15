@@ -94,13 +94,13 @@
     </div>
 
     <!--Schedule-->
-    <div class="container">
+    <div id="home-schedule" class="container">
       <div class="row"><!--The group that is NOT in the grey area-->
         <div class="col-9">
-          <h2>Schedule</h2>
+          <h2>Upcoming Shows</h2>
         </div>
         <div class="col-3">
-          <a href="schedule.html">View fill schedule</a>
+          <a class="float-right schedule-link" href="schedule.html">View full schedule</a>
         </div>
       </div>
       <div id="home-schedule-grey" class="row"><!--Container for grey area-->
@@ -109,12 +109,12 @@
           <div class="row show-item"><!--First Show Item-->
             <div class="col"><!--Container for First show Item-->
               <div class="row"><!--Container for All show information & buttons-->
-                <div class="col-10"><!--Show info col-->
-                  <div class="row"><!--Date and location-->
-                    <div class="col-1">
+                <div class="col-9"><!--Show info col-->
+                  <div class="row show-date-location"><!--Date and location-->
+                    <div class="col-1 show-day">
                       FRI
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 show-date">
                       June 15
                     </div>
                     <div class="col">
@@ -127,91 +127,108 @@
                     </div>
                   </div>
                 </div><!--End Show info col-->
-                <div class="col-2"><!--Button col-->
-                  <button class="btn-outline-primary">Tickets</button>
-                  <button class="btn-outline-primary">RSVP</button>
+                <div class="col-3 schedule-buttons"><!--Button col-->
+                  <div class="float-right align-middle">
+                    <button class="btn-outline-primary align-middle">Tickets</button>
+                    <button class="btn-outline-primary align-middle">RSVP</button>
+                  </div>
                 </div><!--End Button col-->
               </div><!--End Containter for all show information & buttons-->
             </div>
           </div><!--End first show item-->
 
           <div class="row show-item"><!--Second Show Item-->
-            <div class="col"><!--Container for Second show Item-->
+            <div class="col"><!--Container for First show Item-->
               <div class="row"><!--Container for All show information & buttons-->
-                <div class="col"><!--Show info col-->
-                  <div class="row"><!--Date and location-->
-                    <div class="col">
-                      <h3>June 1st, 2018</h3>
+                <div class="col-9"><!--Show info col-->
+                  <div class="row show-date-location"><!--Date and location-->
+                    <div class="col-1 show-day">
+                      FRI
+                    </div>
+                    <div class="col-3 show-date">
+                      June 15
                     </div>
                     <div class="col">
-                      <p>Moira Records</p>
+                      Moira Records
                     </div>
                   </div>
-                  <div class="row">
+                  <div class="schedule-artists row">
                     <div class="col">
-                      <p>Mid Atlantic Title, Fall Of The Albatross, and Friends at Moira</p>
+                      <p>w/ Mid Atlantic Title, Fall Of The Albatross, and Friends at Moira</p>
                     </div>
                   </div>
                 </div><!--End Show info col-->
-                <div class="col"><!--Button col-->
-                  <button>Tickets</button>
-                  <button>RSVP</button>
+                <div class="col-3 schedule-buttons"><!--Button col-->
+                  <div class="float-right">
+                    <button class="btn-outline-primary">Tickets</button>
+                    <button class="btn-outline-primary">RSVP</button>
+                  </div>
                 </div><!--End Button col-->
               </div><!--End Containter for all show information & buttons-->
             </div>
-          </div><!--End Second show item-->
+          </div><!--End second show item-->
 
-          <div class="row show-item"><!--Third Show Item-->
-            <div class="col"><!--Container for Third show Item-->
+          <div class="row show-item"><!--Third show Item-->
+            <div class="col"><!--Container for First show Item-->
               <div class="row"><!--Container for All show information & buttons-->
-                <div class="col"><!--Show info col-->
-                  <div class="row"><!--Date and location-->
-                    <div class="col">
-                      <h3>June 1st, 2018</h3>
+                <div class="col-12 col-lg-9 col-md-8"><!--Show info col-->
+                  <div class="row show-date-location"><!--Date and location-->
+                    <div class="col-1 show-day">
+                      FRI
+                    </div>
+                    <div class="col-3 show-date">
+                      June 15
                     </div>
                     <div class="col">
-                      <p>Moira Records</p>
+                      Moira Records
                     </div>
                   </div>
-                  <div class="row">
+                  <div class="schedule-artists row">
                     <div class="col">
-                      <p>Mid Atlantic Title, Fall Of The Albatross, and Friends at Moira</p>
+                      <p>w/ Mid Atlantic Title, Fall Of The Albatross, and Friends at Moira</p>
                     </div>
                   </div>
                 </div><!--End Show info col-->
-                <div class="col"><!--Button col-->
-                  <button>Tickets</button>
-                  <button>RSVP</button>
+                <div class="col-12 col-md-4 col-lg-3 schedule-buttons"><!--Button col-->
+                  <div class="float-right">
+                    <button class="btn-outline-primary">Tickets</button>
+                    <button class="btn-outline-primary">RSVP</button>
+                  </div>
                 </div><!--End Button col-->
               </div><!--End Containter for all show information & buttons-->
             </div>
-          </div><!--End Third show item-->
+          </div><!--End third show item-->
 
           <div class="row show-item-last"><!--Fourth Show Item-->
             <div class="col"><!--Container for First show Item-->
               <div class="row"><!--Container for All show information & buttons-->
-                <div class="col"><!--Show info col-->
-                  <div class="row"><!--Date and location-->
-                    <div class="col">
-                      <h3>June 1st, 2018</h3>
+                <div class="col-9"><!--Show info col-->
+                  <div class="row show-date-location"><!--Date and location-->
+                    <div class="col-1 show-day">
+                      FRI
                     </div>
-                    <div class="col">
-                      <p>Moira Records</p>
+                    <div class="col-3 show-date">
+                      June 15
+                    </div>
+                    <div class="col show-location">
+                      Moira Records
                     </div>
                   </div>
-                  <div class="row">
+                  <div class="schedule-artists row">
                     <div class="col">
-                      <p>Mid Atlantic Title, Fall Of The Albatross, and Friends at Moira</p>
+                      <p>w/ Mid Atlantic Title, Fall Of The Albatross, and Friends at Moira</p>
                     </div>
                   </div>
                 </div><!--End Show info col-->
-                <div class="col"><!--Button col-->
-                  <button>Tickets</button>
-                  <button>RSVP</button>
+                <div class="col-3 schedule-buttons ml-auto"><!--Button col-->
+                  <div class="button-container">
+                    <button class="btn-outline-primary">Tickets</button>
+                    <button class="btn-outline-primary">RSVP</button>
+                  </div>
                 </div><!--End Button col-->
               </div><!--End Containter for all show information & buttons-->
             </div>
-          </div><!--End Fourth show item-->
+          </div><!--End fourth show item-->
 
         </div><!--Closing Grey Area-->
       </div><!--Closing Grey area row-->
@@ -219,22 +236,22 @@
     </div><!--End full schedule area-->
 
     <!--Footer-->
-    <div class="container">
-      <ul class="nav justify-content-center">
+    <div id="footer" class="container">
+      <ul id="footer-nav" class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Schedule</a>
+          <a class="nav-link" href="schedule.html">Schedule</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About BB</a>
+          <a class="nav-link" href="about.html">About BB</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Book with Us</a>
+          <a class="nav-link" href="about.html#booking-form">Book with Us</a>
         </li>
       </ul>
-      <p class="text-center">&copy; 2018 Brightside Booking. All rights reserved or whatever.</p>
+      <p id="copyright-text" class="text-center">&copy; 2018 Brightside Booking. All rights reserved or whatever.</p>
     </div>
 
     <!-- Optional JavaScript -->

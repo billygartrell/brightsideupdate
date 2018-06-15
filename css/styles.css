@@ -1,4 +1,4 @@
-body{
+  body{
   font-family:nimbus-sans, Helvetica, sans-serif;
 }
 
@@ -11,6 +11,7 @@ h2{
   font-weight:bold;
   margin-top:.7em;
   margin-bottom:.7em;
+  margin-left:50px;
 }
 
 .prestige{
@@ -30,6 +31,10 @@ h2{
   padding-bottom:1em;
 }
 
+.nav-link:hover{
+  color:#ff8b5c;
+}
+
 #nav-cta{
   background-color:#e90253;
   padding-left:10px;
@@ -38,6 +43,10 @@ h2{
 
 #nav-cta a{
   color:white;
+}
+
+#nav-cta:hover{
+  background-color:#c40045;
 }
 
 .flier{
@@ -55,11 +64,15 @@ h2{
 }
 
 .jumbotron h1{
-  font-family:nimbus-sans;
+  font-family:nimbus-sans,Helvetica, sans-serif;
   font-weight:900;
   font-size: 6rem;
   line-height:.9;
   text-transform:uppercase;
+  color:#ff530d;
+}
+
+#next-show{
   color:#ff530d;
 }
 
@@ -76,6 +89,14 @@ h2{
   padding-top:0;
 }
 
+th{
+  font-size:18pt;
+}
+
+td{
+  font-size:15pt;
+}
+
 .btn-primary{
   background-color:#e90253;
   border:none;
@@ -85,45 +106,109 @@ h2{
   color:white;
 }
 
+.btn-primary:hover{
+  background-color:#c40045;
+}
+
 .btn-outline-primary{
+  font-size:1.1rem;
+  font-weight:bold;
   background-color:none;
   border:2px solid #e90253;
   color: #e90253;
+}
+
+.btn-outline-primary:hover{
+  background-color:#e90253;
+  border:2px solid #e90253;
+  color: white;
 }
 
 .btn-outline-primary a{
   color: #e90253;
 }
 
-
-
-#homepage-schedule{
-  background-color:#f8f9fa!important;
-  /* padding:20px; */
+#home-schedule{
+  margin-top:50px;
 }
 
-#homepage-schedule p{
-  font-size:14pt;
+#home-schedule h2{
+  color:#757575;
 }
 
 /* Home Schedule Styles desktop */
 #home-schedule-grey{
   background-color:#ebebeb;
   border-radius:10px;
-  padding:25px;
+  padding:40px;
   color:#757575;
 }
 
+.schedule-link{
+  margin-top:50px;
+  margin-right:50px;
+  font-family:prestige-elite-std,monospace;
+  text-decoration:underline;
+  color:#e90253;
+}
+.schedule-link:hover{
+color:#c40045;
+}
+
 .schedule-artists{
-  font-family:prestige-elite-std;
+  font-family:prestige-elite-std,monospace;
+  font-weight:light;
+  font-size:.9rem;
 }
 
 .show-item{
-  border-bottom:1px solid white;
-  margin-bottom:25px;
+  border-bottom:2px solid white;
+  padding-bottom:10px;
+  margin-bottom:40px;
 }
 
 .show-item-last{
   border-bottom:0;
   margin-bottom:0;
+}
+
+.show-date-location{
+  font-size:1.4rem;
+  margin-bottom:10px;
+}
+
+.show-day, .show-date{
+  font-weight:bold;
+}
+
+.show-location{
+  font-weight;400;
+}
+
+.schedule-buttons button{
+  padding:5px 15px;
+}
+
+#footer{
+  margin-top:50px;
+}
+
+#footer-nav .nav-link{
+  font-size:.8em;
+  font-weight:bold;
+  color:#757575;
+  margin:30px;
+}
+
+#footer-nav .nav-link:hover{
+  color:#464646;
+}
+
+#copyright-text{
+  color:#757575;
+  font-size:.7em;
+}
+
+.button-container{
+  float:right;
 }

@@ -79,11 +79,23 @@ h2{
 .btn-primary{
   background-color:#e90253;
   border:none;
-
 }
+
 .btn-primary a{
   color:white;
 }
+
+.btn-outline-primary{
+  background-color:none;
+  border:2px solid #e90253;
+  color: #e90253;
+}
+
+.btn-outline-primary a{
+  color: #e90253;
+}
+
+
 
 #homepage-schedule{
   background-color:#f8f9fa!important;
@@ -92,4 +104,26 @@ h2{
 
 #homepage-schedule p{
   font-size:14pt;
+}
+
+/* Home Schedule Styles desktop */
+#home-schedule-grey{
+  background-color:#ebebeb;
+  border-radius:10px;
+  padding:25px;
+  color:#757575;
+}
+
+.schedule-artists{
+  font-family:prestige-elite-std;
+}
+
+.show-item{
+  border-bottom:1px solid white;
+  margin-bottom:25px;
+}
+
+.show-item-last{
+  border-bottom:0;
+  margin-bottom:0;
 }

@@ -15,7 +15,7 @@
   <body>
     <!--Navigation-->
     <div class="container">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-light navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,9 +41,9 @@
     </div>
     <!--Hero image-->
     <div class="container">
-      <div class="jumbotron rounded-0">
-        <h1 class="display-4 text-right">Brightside<br> Booking</h1>
-        <p class="lead text-right prestige">Making Lancaster, PA<br>brighter since 2018.</p>
+      <div class="jumbotron rounded-0"><!--NBSP below is pretty broken. Figure out a better way to do this.-->
+        <h1 class="display-4 text-right"><span class="white">Brightside&nbsp;<br>&nbsp;Booking</span></h1>
+        <p class="lead text-right prestige"><span class="white">Making Lancaster, PA&nbsp;&nbsp;<br>brighter since 2018.</span></p>
       </div>
     </div>
     <!--Upcoming Show-->
@@ -53,7 +53,7 @@
         <div class="col-12 col-md-5">
           <img src="img/fliertest.jpg" class="img-fluid flier" alt="Upcoming Show Flier">
         </div>
-        <div class="col-12 col-md-7">
+        <div class="col-12 col-md-7 table-container">
           <table class="table table-borderless ml-5">
             <tbody>
               <tr>
@@ -88,7 +88,7 @@
                 <td class="prestige">All ages show. 21+ BYOB.</td>
             </tbody>
           </table>
-          <a href="#"><button type="button" class="btn btn-primary btn-lg ml-5">Get Tickets</a>
+          <a href="#"><button type="button" class="btn btn-primary btn-lg ml-md-5 ticket-btn">Get Tickets</a>
         </div>
       </div>
     </div>
@@ -96,28 +96,28 @@
     <!--Schedule-->
     <div id="home-schedule" class="container">
       <div class="row"><!--The group that is NOT in the grey area-->
-        <div class="col-9">
+        <div class="col-12 col-md-9">
           <h2>Upcoming Shows</h2>
         </div>
-        <div class="col-3">
-          <a class="float-right schedule-link" href="schedule.html">View full schedule</a>
+        <div class="col-12 col-md-3">
+          <a class="schedule-link" href="schedule.html"><p>View full schedule</p></a>
         </div>
       </div>
       <div id="home-schedule-grey" class="row"><!--Container for grey area-->
         <div class="col"><!--Everything within the grey area-->
 
-          <div class="row show-item"><!--First Show Item-->
+          <div class="row show-item"><!--First show Item-->
             <div class="col"><!--Container for First show Item-->
               <div class="row"><!--Container for All show information & buttons-->
-                <div class="col-9"><!--Show info col-->
+                <div class="col-12 col-lg-9 col-md-8"><!--Show info col-->
                   <div class="row show-date-location"><!--Date and location-->
-                    <div class="col-1 show-day">
+                    <div class="col-2 col-lg-1 show-day">
                       FRI
                     </div>
-                    <div class="col-3 show-date">
+                    <div class="col-5 col-sm-3 show-date">
                       June 15
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6">
                       Moira Records
                     </div>
                   </div>
@@ -127,28 +127,28 @@
                     </div>
                   </div>
                 </div><!--End Show info col-->
-                <div class="col-3 schedule-buttons"><!--Button col-->
-                  <div class="float-right align-middle">
-                    <button class="btn-outline-primary align-middle">Tickets</button>
-                    <button class="btn-outline-primary align-middle">RSVP</button>
+                <div class="col-12 col-md-4 col-lg-3"><!--Button col-->
+                  <div class="schedule-buttons">
+                    <button class="btn-outline-primary">Tickets</button>
+                    <button class="btn-outline-primary">RSVP</button>
                   </div>
                 </div><!--End Button col-->
               </div><!--End Containter for all show information & buttons-->
             </div>
-          </div><!--End first show item-->
+          </div><!--End First show item-->
 
-          <div class="row show-item"><!--Second Show Item-->
+          <div class="row show-item"><!--Second show Item-->
             <div class="col"><!--Container for First show Item-->
               <div class="row"><!--Container for All show information & buttons-->
-                <div class="col-9"><!--Show info col-->
+                <div class="col-12 col-lg-9 col-md-8"><!--Show info col-->
                   <div class="row show-date-location"><!--Date and location-->
-                    <div class="col-1 show-day">
+                    <div class="col-2 col-lg-1 show-day">
                       FRI
                     </div>
-                    <div class="col-3 show-date">
+                    <div class="col-5 col-sm-3 show-date">
                       June 15
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6">
                       Moira Records
                     </div>
                   </div>
@@ -158,8 +158,8 @@
                     </div>
                   </div>
                 </div><!--End Show info col-->
-                <div class="col-3 schedule-buttons"><!--Button col-->
-                  <div class="float-right">
+                <div class="col-12 col-md-4 col-lg-3"><!--Button col-->
+                  <div class="schedule-buttons">
                     <button class="btn-outline-primary">Tickets</button>
                     <button class="btn-outline-primary">RSVP</button>
                   </div>
@@ -173,13 +173,13 @@
               <div class="row"><!--Container for All show information & buttons-->
                 <div class="col-12 col-lg-9 col-md-8"><!--Show info col-->
                   <div class="row show-date-location"><!--Date and location-->
-                    <div class="col-1 show-day">
+                    <div class="col-2 col-lg-1 show-day">
                       FRI
                     </div>
-                    <div class="col-3 show-date">
+                    <div class="col-5 col-sm-3 show-date">
                       June 15
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-6">
                       Moira Records
                     </div>
                   </div>
@@ -189,8 +189,8 @@
                     </div>
                   </div>
                 </div><!--End Show info col-->
-                <div class="col-12 col-md-4 col-lg-3 schedule-buttons"><!--Button col-->
-                  <div class="float-right">
+                <div class="col-12 col-md-4 col-lg-3"><!--Button col-->
+                  <div class="schedule-buttons">
                     <button class="btn-outline-primary">Tickets</button>
                     <button class="btn-outline-primary">RSVP</button>
                   </div>
@@ -199,18 +199,18 @@
             </div>
           </div><!--End third show item-->
 
-          <div class="row show-item-last"><!--Fourth Show Item-->
+          <div class="row show-item-last"><!--Last show Item-->
             <div class="col"><!--Container for First show Item-->
               <div class="row"><!--Container for All show information & buttons-->
-                <div class="col-9"><!--Show info col-->
+                <div class="col-12 col-lg-9 col-md-8"><!--Show info col-->
                   <div class="row show-date-location"><!--Date and location-->
-                    <div class="col-1 show-day">
+                    <div class="col-2 col-lg-1 show-day">
                       FRI
                     </div>
-                    <div class="col-3 show-date">
+                    <div class="col-5 col-sm-3 show-date">
                       June 15
                     </div>
-                    <div class="col show-location">
+                    <div class="col-12 col-sm-6">
                       Moira Records
                     </div>
                   </div>
@@ -220,15 +220,15 @@
                     </div>
                   </div>
                 </div><!--End Show info col-->
-                <div class="col-3 schedule-buttons ml-auto"><!--Button col-->
-                  <div class="button-container">
+                <div class="col-12 col-md-4 col-lg-3"><!--Button col-->
+                  <div class="schedule-buttons">
                     <button class="btn-outline-primary">Tickets</button>
                     <button class="btn-outline-primary">RSVP</button>
                   </div>
                 </div><!--End Button col-->
               </div><!--End Containter for all show information & buttons-->
             </div>
-          </div><!--End fourth show item-->
+          </div><!--End Last show item-->
 
         </div><!--Closing Grey Area-->
       </div><!--Closing Grey area row-->

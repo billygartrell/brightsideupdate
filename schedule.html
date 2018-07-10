@@ -10,119 +10,315 @@
     <link rel="stylesheet" href="https://use.typekit.net/eny0vyt.css">
     <!--Custom CSS-->
     <link rel="stylesheet" type ="text/css" href="css/styles.css">
-    <title>Brightside Booking</title>
+    <title>Brightside Booking - Schedule</title>
   </head>
   <body>
     <!--Navigation-->
     <div class="container">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-light navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="index.html">Home</a>
+            </li>
             <li class="nav-item active">
-              <a class="nav-link mx-3" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link mx-3" href="schedule.html">Schedule <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-3" href="schedule.html">Schedule</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-3" href="about.html">About BB</a>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="about.html">About BB</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
             <li id="nav-cta" class="nav-item">
-              <a class="nav-link" href="about.html#form">Book with Us</a>
+              <a class="nav-link" href="about.html#booking-form">Book with Us</a>
             </li>
           </ul>
         </div> <!--Close Navbar-->
       </nav>
     </div>
+
     <!--Hero image-->
-    <div class="container">
-      <div class="jumbotron rounded-0">
-        <h1 class="display-4 text-right">Brightside<br> Booking</h1>
-        <p class="lead text-right prestige">Making Lancaster, PA<br>brighter since 2018.</p>
+    <div id="schedule-hero" class="container hero">
+      <div class="jumbotron rounded-0"><!--NBSP below is pretty broken. Figure out a better way to do this.-->
+        <h1 class="display-4 text-right"><span class="white">Schedule</span></h1>
+        <p class="lead text-right prestige"><span class="white">All shows, future and past</span></p>
       </div>
     </div>
-    <!--Upcoming Show-->
-    <div class="container">
-      <h2>Next Show</h2>
-      <div class="row">
-        <div class="col-md">
-          <img src="img/fliertest.jpg" class="img-fluid" alt="Upcoming Show Flier">
-        </div>
-        <div class="col-md">
-          <table class="table table-borderless">
-            <tbody>
-              <tr>
-                <th scope="row">Date</th>
-                <td class="prestige">June 23, 2018</td>
-              </tr>
-              <tr>
-                <th scope="row">Artists</th>
-                <td>
-                  <table id="next-show-artists" class="table table-borderless prestige">
-                    <tr>
-                      <td id="first-artist">Worries</td>
-                    </tr>
-                    <tr>
-                      <td>Sun Not Yellow</td>
-                    </tr>
-                    <tr>
-                      <td>Seasonal</td>
-                    </tr>
-                    <tr>
-                      <td>Magnolia.</td>
-                    </tr>
-                  </table>
-              </td>
-              </tr>
-              <tr>
-                <th scope="row">Location</th>
-                <td class="prestige">Moira Records</td>
-              </tr>
-              <tr>
-                <th></th>
-                <td class="prestige">All ages show. 21+ BYOB.</td>
-            </tbody>
-          </table>
-          <a href="#"><button type="button" class="btn btn-outline-primary btn-lg ml-auto">Get Tickets</a>
-        </div>
-      </div>
-    </div>
+
     <!--Schedule-->
-    <div id="homepage-schedule" class="container">
-      <h2>Schedule</h2>
-      <h3>Show 1 Date</h3>
-      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
-      <h3>Show 1 Date</h3>
-      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
-      <h3>Show 1 Date</h3>
-      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
-      <h3>Show 1 Date</h3>
-      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
-      <h3>Show 1 Date</h3>
-      <a href="#"><p>Band #1, Band #2, Band #3, Band #4</p></a>
-    </div>
-    <!--Footer-->
     <div class="container">
-      <ul class="nav justify-content-center">
+      <div class="row"><!--The group that is NOT in the grey area-->
+        <div class="col-12 col-md-9">
+          <h2>Upcoming Shows</h2>
+        </div>
+      </div>
+      <div id="home-schedule-grey" class="row"><!--Container for grey area-->
+        <div class="col"><!--Everything within the grey area-->
+
+          <div class="row show-item"><!--First show Item-->
+            <div class="col"><!--Container for First show Item-->
+              <div class="row"><!--Container for All show information & buttons-->
+                <div class="col-12 col-lg-9 col-md-8"><!--Show info col-->
+                  <div class="row show-date-location"><!--Date and location-->
+                    <div class="col-2 col-lg-1 show-day">
+                      FRI
+                    </div>
+                    <div class="col-5 col-sm-3 show-date">
+                      June 15
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      Moira Records
+                    </div>
+                  </div>
+                  <div class="schedule-artists row">
+                    <div class="col">
+                      <p>w/ Mid Atlantic Title, Fall Of The Albatross, and Friends at Moira</p>
+                    </div>
+                  </div>
+                </div><!--End Show info col-->
+                <div class="col-12 col-md-4 col-lg-3"><!--Button col-->
+                  <div class="schedule-buttons">
+                    <button class="btn-outline-primary">Tickets</button>
+                    <button class="btn-outline-primary">RSVP</button>
+                  </div>
+                </div><!--End Button col-->
+              </div><!--End Containter for all show information & buttons-->
+            </div>
+          </div><!--End First show item-->
+
+          <div class="row show-item"><!--Second show Item-->
+            <div class="col"><!--Container for First show Item-->
+              <div class="row"><!--Container for All show information & buttons-->
+                <div class="col-12 col-lg-9 col-md-8"><!--Show info col-->
+                  <div class="row show-date-location"><!--Date and location-->
+                    <div class="col-2 col-lg-1 show-day">
+                      FRI
+                    </div>
+                    <div class="col-5 col-sm-3 show-date">
+                      June 15
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      Moira Records
+                    </div>
+                  </div>
+                  <div class="schedule-artists row">
+                    <div class="col">
+                      <p>w/ Mid Atlantic Title, Fall Of The Albatross, and Friends at Moira</p>
+                    </div>
+                  </div>
+                </div><!--End Show info col-->
+                <div class="col-12 col-md-4 col-lg-3"><!--Button col-->
+                  <div class="schedule-buttons">
+                    <button class="btn-outline-primary">Tickets</button>
+                    <button class="btn-outline-primary">RSVP</button>
+                  </div>
+                </div><!--End Button col-->
+              </div><!--End Containter for all show information & buttons-->
+            </div>
+          </div><!--End second show item-->
+
+          <div class="row show-item"><!--Third show Item-->
+            <div class="col"><!--Container for First show Item-->
+              <div class="row"><!--Container for All show information & buttons-->
+                <div class="col-12 col-lg-9 col-md-8"><!--Show info col-->
+                  <div class="row show-date-location"><!--Date and location-->
+                    <div class="col-2 col-lg-1 show-day">
+                      FRI
+                    </div>
+                    <div class="col-5 col-sm-3 show-date">
+                      June 15
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      Moira Records
+                    </div>
+                  </div>
+                  <div class="schedule-artists row">
+                    <div class="col">
+                      <p>w/ Mid Atlantic Title, Fall Of The Albatross, and Friends at Moira</p>
+                    </div>
+                  </div>
+                </div><!--End Show info col-->
+                <div class="col-12 col-md-4 col-lg-3"><!--Button col-->
+                  <div class="schedule-buttons">
+                    <button class="btn-outline-primary">Tickets</button>
+                    <button class="btn-outline-primary">RSVP</button>
+                  </div>
+                </div><!--End Button col-->
+              </div><!--End Containter for all show information & buttons-->
+            </div>
+          </div><!--End third show item-->
+
+          <div class="row show-item-last"><!--Last show Item-->
+            <div class="col"><!--Container for First show Item-->
+              <div class="row"><!--Container for All show information & buttons-->
+                <div class="col-12 col-lg-9 col-md-8"><!--Show info col-->
+                  <div class="row show-date-location"><!--Date and location-->
+                    <div class="col-2 col-lg-1 show-day">
+                      FRI
+                    </div>
+                    <div class="col-5 col-sm-3 show-date">
+                      June 15
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      Moira Records
+                    </div>
+                  </div>
+                  <div class="schedule-artists row">
+                    <div class="col">
+                      <p>w/ Mid Atlantic Title, Fall Of The Albatross, and Friends at Moira</p>
+                    </div>
+                  </div>
+                </div><!--End Show info col-->
+                <div class="col-12 col-md-4 col-lg-3"><!--Button col-->
+                  <div class="schedule-buttons">
+                    <button class="btn-outline-primary">Tickets</button>
+                    <button class="btn-outline-primary">RSVP</button>
+                  </div>
+                </div><!--End Button col-->
+              </div><!--End Containter for all show information & buttons-->
+            </div>
+          </div><!--End Last show item-->
+
+        </div><!--Closing Grey Area-->
+      </div><!--Closing Grey area row-->
+
+    </div><!--End full schedule area-->
+
+    <!--Schedule-->
+    <div id="home-schedule" class="container">
+      <div class="row"><!--The group that is NOT in the grey area-->
+        <div class="col-12">
+          <h2>Past Shows</h2>
+        </div>
+      </div>
+      <div id="home-schedule-grey" class="row"><!--Container for grey area-->
+        <div class="col"><!--Everything within the grey area-->
+
+          <div class="row show-item"><!--First show Item-->
+            <div class="col"><!--Container for First show Item-->
+              <div class="row"><!--Container for All show information & buttons-->
+                <div class="col-12 col-lg-9 col-md-8"><!--Show info col-->
+                  <div class="row show-date-location"><!--Date and location-->
+                    <div class="col-2 col-lg-1 show-day">
+                      FRI
+                    </div>
+                    <div class="col-5 col-sm-3 show-date">
+                      June 15
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      Moira Records
+                    </div>
+                  </div>
+                  <div class="schedule-artists row">
+                    <div class="col">
+                      <p>w/ Mid Atlantic Title, Fall Of The Albatross, and Friends at Moira</p>
+                    </div>
+                  </div>
+                </div><!--End Show info col-->
+              </div><!--End Containter for all show information & buttons-->
+            </div>
+          </div><!--End First show item-->
+
+          <div class="row show-item"><!--Second show Item-->
+            <div class="col"><!--Container for First show Item-->
+              <div class="row"><!--Container for All show information & buttons-->
+                <div class="col-12 col-lg-9 col-md-8"><!--Show info col-->
+                  <div class="row show-date-location"><!--Date and location-->
+                    <div class="col-2 col-lg-1 show-day">
+                      FRI
+                    </div>
+                    <div class="col-5 col-sm-3 show-date">
+                      June 15
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      Moira Records
+                    </div>
+                  </div>
+                  <div class="schedule-artists row">
+                    <div class="col">
+                      <p>w/ Mid Atlantic Title, Fall Of The Albatross, and Friends at Moira</p>
+                    </div>
+                  </div>
+                </div><!--End Show info col-->
+              </div><!--End Containter for all show information & buttons-->
+            </div>
+          </div><!--End second show item-->
+
+          <div class="row show-item"><!--Third show Item-->
+            <div class="col"><!--Container for First show Item-->
+              <div class="row"><!--Container for All show information & buttons-->
+                <div class="col-12 col-lg-9 col-md-8"><!--Show info col-->
+                  <div class="row show-date-location"><!--Date and location-->
+                    <div class="col-2 col-lg-1 show-day">
+                      FRI
+                    </div>
+                    <div class="col-5 col-sm-3 show-date">
+                      June 15
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      Moira Records
+                    </div>
+                  </div>
+                  <div class="schedule-artists row">
+                    <div class="col">
+                      <p>w/ Mid Atlantic Title, Fall Of The Albatross, and Friends at Moira</p>
+                    </div>
+                  </div>
+                </div><!--End Show info col-->
+              </div><!--End Containter for all show information & buttons-->
+            </div>
+          </div><!--End third show item-->
+
+          <div class="row show-item-last"><!--Last show Item-->
+            <div class="col"><!--Container for First show Item-->
+              <div class="row"><!--Container for All show information & buttons-->
+                <div class="col-12 col-lg-9 col-md-8"><!--Show info col-->
+                  <div class="row show-date-location"><!--Date and location-->
+                    <div class="col-2 col-lg-1 show-day">
+                      FRI
+                    </div>
+                    <div class="col-5 col-sm-3 show-date">
+                      June 15
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      Moira Records
+                    </div>
+                  </div>
+                  <div class="schedule-artists row">
+                    <div class="col">
+                      <p>w/ Mid Atlantic Title, Fall Of The Albatross, and Friends at Moira</p>
+                    </div>
+                  </div>
+                </div><!--End Show info col-->
+              </div><!--End Containter for all show information & buttons-->
+            </div>
+          </div><!--End Last show item-->
+
+        </div><!--Closing Grey Area-->
+      </div><!--Closing Grey area row-->
+
+    </div><!--End full schedule area-->
+
+    <!--Footer-->
+    <div id="footer" class="container">
+      <ul id="footer-nav" class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Schedule</a>
+          <a class="nav-link" href="schedule.html">Schedule</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About BB</a>
+          <a class="nav-link" href="about.html">About BB</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Book with Us</a>
+          <a class="nav-link" href="about.html#booking-form">Book with Us</a>
         </li>
       </ul>
-      <p class="text-center">&copy; 2018 Brightside Booking. All rights reserved or whatever.</p>
+      <p id="copyright-text" class="text-center">&copy; 2018 Brightside Booking. All rights reserved or whatever.</p>
     </div>
 
     <!-- Optional JavaScript -->

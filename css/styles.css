@@ -11,8 +11,21 @@ h2{
   font-weight:bold;
   margin-top:.7em;
   margin-bottom:.7em;
+}
+
+#who-we-are{
+  padding-left:50px;
+  padding-right:50px;
+}
+
+#who-we-are p{
+  font-size:1.5em;
+}
+
+#next-show h2, #home-schedule h2{
   margin-left:50px;
 }
+
 
 .prestige{
   font-family: prestige-elite-std, monospace;
@@ -58,11 +71,32 @@ h2{
   font-weight:bold;
 }
 
+.hero{
+  padding-left:0;
+  padding-right:0;
+}
+
 .jumbotron{
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-color:white;
   margin:0;
+}
+
+#about-hero .jumbotron{
+  background-image: url("../img/about-hero.jpg");
+  background-repeat: no-repeat;
+  background-color:white;
+  margin:0;
+  height:300px;
+}
+
+#schedule-hero .jumbotron{
+  background-image: url("../img/schedule-hero.jpg");
+  background-repeat: no-repeat;
+  background-color:white;
+  margin:0;
+  height:300px;
 }
 
 .jumbotron h1{
@@ -84,7 +118,7 @@ h2{
   padding-right:25px;
 }
 
-#next-show{
+#next-show h2{
   color:#ff530d;
 }
 
@@ -222,6 +256,10 @@ color:#c40045;
   margin-top:50px;
 }
 
+#footer-nav nav{
+  padding:0 100px;
+}
+
 #footer-nav .nav-link{
   font-size:.8em;
   font-weight:bold;
@@ -319,6 +357,17 @@ color:#c40045;
 
   #nav-cta a{
     color:#ff530d!important;
+  }
+
+  #footer-nav .nav-link{
+    font-size:1em;
+    font-weight:bold;
+    color:#757575;
+    margin:20px;
+  }
+
+  #footer-nav nav{
+    padding:0;
   }
 
 }

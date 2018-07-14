@@ -9,23 +9,40 @@
 h2{
   font-size:2.5em;
   font-weight:bold;
-  margin-top:.7em;
   margin-bottom:.7em;
 }
 
 #who-we-are{
-  padding-left:50px;
-  padding-right:50px;
+  padding-left:65px;
+  padding-right:65px;
 }
 
 #who-we-are p{
-  font-size:1.5em;
+  font-family: prestige-elite-std;
+  font-size:15pt;
+  color:#757575;
 }
 
-#next-show h2, #home-schedule h2{
+#who-we-are a{
+  color:#ff530d;
+  text-decoration: underline;
+}
+
+#upcoming-schedule{
+  margin-top:50px;
+}
+
+#booking-form{
   margin-left:50px;
+  margin-right:50px;
 }
 
+label{
+  font-family: nimbus-sans, Helvetica, sans-serif;
+  font-size:15pt;
+  font-weight:bold;
+  color:#757575;
+}
 
 .prestige{
   font-family: prestige-elite-std, monospace;
@@ -42,6 +59,10 @@ h2{
   color: #ff530d!important;
   padding-top:1em;
   padding-bottom:1em;
+}
+
+#footer .nav-link{
+  color:#757575!important;
 }
 
 .nav-link:hover{
@@ -74,6 +95,7 @@ h2{
 .hero{
   padding-left:0;
   padding-right:0;
+  margin-bottom:50px;
 }
 
 .jumbotron{
@@ -81,6 +103,7 @@ h2{
   background-repeat: no-repeat;
   background-color:white;
   margin:0;
+    border-radius:80px;
 }
 
 #about-hero .jumbotron{
@@ -116,6 +139,10 @@ h2{
   padding-top:5px;
   padding-left:25px;
   padding-right:25px;
+}
+
+#next-show{
+  color:#757575;
 }
 
 #next-show h2{
@@ -202,6 +229,13 @@ td{
   color:#757575;
 }
 
+#schedule-area{
+    border-radius:10px;
+    padding-left:50px;
+    padding-right:50px;
+    color:#757575;
+}
+
 .schedule-link{
   margin-top:50px;
   margin-right:50px;
@@ -260,15 +294,18 @@ color:#c40045;
   padding:0 100px;
 }
 
+#footer .nav-link{
+  color:#757575!important;
+}
+
 #footer-nav .nav-link{
   font-size:.8em;
   font-weight:bold;
-  color:#757575;
   margin:30px;
 }
 
-#footer-nav .nav-link:hover{
-  color:#464646;
+#footer-nav .nav-link a{
+  color:#757575!important;
 }
 
 #copyright-text{
@@ -280,6 +317,15 @@ color:#c40045;
   float:right;
 }
 
+.indent{
+  margin-left:50px;
+}
+
+.orange{
+  color:#ff530d;
+}
+
+/* -------------- Small styles --------------- */
 @media(max-width:767px){
 
   .table-container{
@@ -287,6 +333,11 @@ color:#c40045;
   }
   .table-container table{
     margin-left:0px!important;
+  }
+
+  #booking-form{
+    margin-left:20px;
+    margin-right:20px;
   }
 
   .schedule-link{
@@ -297,9 +348,13 @@ color:#c40045;
     text-align:center;
   }
 
+  .indent{
+    margin-left:0px;
+  }
+
   h2{
     text-align:center;
-    margin-left:0px;
+    font-size:2em;
   }
 
   .ticket-btn{
@@ -328,9 +383,7 @@ color:#c40045;
     margin-top:.7em;
   }
 
-  h2{
-    font-size:2em;
-  }
+
 
   .navbar-collapse{
     margin-bottom:5px;
@@ -360,14 +413,23 @@ color:#c40045;
   }
 
   #footer-nav .nav-link{
+    color:#757575!important;
     font-size:1em;
     font-weight:bold;
-    color:#757575;
     margin:20px;
+  }
+
+  #footer-nav .nav-link a{
+    color:#757575!important;
   }
 
   #footer-nav nav{
     padding:0;
+  }
+
+  #who-we-are{
+    padding-left:40px;
+    padding-right:40px;
   }
 
 }

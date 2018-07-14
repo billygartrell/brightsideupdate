@@ -42,7 +42,7 @@
 
     <!--Hero image-->
     <div id="about-hero"class="container hero">
-      <div class="jumbotron rounded-0"><!--NBSP below is pretty broken. Figure out a better way to do this.-->
+      <div class="jumbotron rounded"><!--NBSP below is pretty broken. Figure out a better way to do this.-->
         <h1 class="display-4 text-right"><span class="white">About<br></span></h1>
         <p class="lead text-right prestige"><span class="white">More about what we do</span></p>
       </div>
@@ -50,48 +50,39 @@
 
     <!--Upcoming Show-->
     <div id="who-we-are" class="container">
-      <h2>Who We Are</h2>
-      <p>Based out of Lancaster, Pennsylvania, Brightside Booking is dedicated to creating a safe space for music, art, and culture. Founded by three friends with a love for music, jokes, and good times. Please feel free to reach out to <a href="mailto:brightsidebooking717@gmail.com">brightsidebooking717@gmail.com</a> with any questions or comments!</p>
+      <h2 class="orange">Who We Are</h2>
+      <p>Based out of Lancaster, Pennsylvania, Brightside Booking is dedicated to creating a safe and fun space for music, art, and culture. Founded by three friends with a love for music, jokes, and good times. Please feel free to reach out to <a href="mailto:brightsidebooking717@gmail.com">brightsidebooking717@gmail.com</a> with any questions or comments!</p>
     </div>
 
     <!--Contact form-->
     <div class="container">
-      <h2>Want to Book with Us?</h2>
+      <h2 class="indent orange">Want to Book with Us?</h2>
       <form id="booking-form">
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <label for="emailaddress">Your Email Address</label>
+          <input type="email" class="form-control" id="emailaddress">
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <label for="subject">Your Act/Band Name</label>
+          <input type="text" class="form-control" id="subject">
         </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <div class="form-group">
+          <label for="Textarea">Enter your details and info here!</label>
+          <textarea class="form-control" id="Textarea" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary btn-lg ticket-btn">Submit</button>
       </form>
     </div>
 
     <!--Footer-->
-    <div class="container">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Schedule</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About BB</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Book with Us</a>
-        </li>
-      </ul>
-      <p class="text-center">&copy; 2018 Brightside Booking. All rights reserved or whatever.</p>
+    <div id="footer-nav" class="container">
+      <nav class="nav flex-column flex-sm-row">
+        <a class="flex-sm-fill text-center nav-link active" href="index.html">Home</a>
+        <a class="flex-sm-fill text-center nav-link" href="schedule.html">Schedule</a>
+        <a class="flex-sm-fill text-center nav-link" href="about.html">About BB</a>
+        <a class="flex-sm-fill text-center nav-link" href="about.html#booking-form">Book with Us</a>
+      </nav>
+      <p id="copyright-text" class="text-center">&copy; 2018 Brightside Booking. All rights reserved or whatever.</p>
     </div>
 
     <!-- Optional JavaScript -->

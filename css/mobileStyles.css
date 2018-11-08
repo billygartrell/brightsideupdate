@@ -1,0 +1,110 @@
+/* -------------- Small styles --------------- */
+@media(max-width:767px){
+
+  .table-container{
+    margin-top:1.4em;
+  }
+  .table-container table{
+    margin-left:0px!important;
+  }
+
+  #booking-form{
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+  .schedule-link{
+    margin-top:0px;
+    margin-right:auto;
+    margin-left:auto;
+    float:none;
+    text-align:center;
+  }
+
+  .indent{
+    margin-left:0px;
+  }
+
+  h2{
+    text-align:center;
+    font-size:2em;
+  }
+
+  .ticket-btn{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    width:100%;
+    height:4rem;
+
+  }
+
+  .schedule-buttons{
+    float:none;
+    text-align:center;
+  }
+
+  .schedule-buttons button{
+    width:40%;
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
+
+  .jumbotron h1{
+    font-size: 3rem;
+    margin-top:.7em;
+  }
+
+#mainNav{
+  margin-bottom:0;
+}
+
+  .navbar-collapse{
+    margin-bottom:5px;
+  }
+
+  .nav-item{
+    font-size:1.5em;
+    text-align:center;
+  }
+
+  .nav-link{
+    padding-top:.5em;
+    padding-bottom:.5em;
+  }
+
+  .navbar{
+      margin-top:10px;
+      margin-bottom:10px;
+  }
+
+  #nav-cta{
+    background-color:white!important;
+  }
+
+  #nav-cta a{
+    color:#ff530d!important;
+  }
+
+  #footer-nav .nav-link{
+    color:#757575!important;
+    font-size:1em;
+    font-weight:bold;
+    margin:20px;
+  }
+
+  #footer-nav .nav-link a{
+    color:#757575!important;
+  }
+
+  #footer-nav nav{
+    padding:0;
+  }
+
+  #who-we-are{
+    padding-left:40px;
+    padding-right:40px;
+  }
+
+}
